@@ -107,4 +107,5 @@ void temp :: forgot(){
     getline(file,password,'\n');
     }
     file.close();
+
 }
