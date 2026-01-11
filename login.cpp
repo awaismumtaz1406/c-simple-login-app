@@ -20,7 +20,7 @@ int main(){
     cout<<"\n4- Exit";
     cout<<"\nEnter Your Choice :: ";
     cin>>choice;
-
+    
     switch(choice){
         case '1':
             cin.ignore();
@@ -109,4 +109,5 @@ void temp :: forgot(){
     file.close();
 
 }
+
 
