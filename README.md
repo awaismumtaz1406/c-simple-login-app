@@ -33,3 +33,23 @@ Use any standard C++ compiler:
 
 ```bash
 g++ login.cpp -o login-app
+▶️ Run
+./login-app
+
+📂 File Structure
+c-simple-login-app/
+├── login.cpp
+├── loginData.txt
+└── README.md
+
+🙌 Improvements
+
+Ideas to enhance this project:
+
+Use hashed passwords
+
+Add user session control
+
+Replace text storage with a database
+
+Add input validation and encryption
