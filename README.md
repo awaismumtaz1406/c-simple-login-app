@@ -1,71 +1,35 @@
-C++ Login, Sign Up, and Forgot Password System
+# C Simple Login App
 
-This project is a console-based user authentication system written in C++. It provides three main features: user login, new account creation (sign up), and password recovery. User data is stored in a text file in a structured format.
+A **console-based user authentication system** in C++ that supports user login, sign-up, and password recovery.
 
-Features
+## 🧠 Overview
 
-Create a new account with username, email, and password
+This project demonstrates a basic **authentication system** using file storage. It allows users to:
 
-Login using stored credentials
+- Create an account (username, email, password)
+- Log in with saved credentials
+- Recover forgotten passwords  
+User data is stored in a structured text file (`loginData.txt`). :contentReference[oaicite:1]{index=1}
 
-Recover forgotten passwords using username and email
+## 🚀 Features
 
-Data stored in a simple text file (loginData.txt)
+- ✅ New user registration  
+- ✅ Login with credentials  
+- ✅ Password recovery by username + email  
+- 📄 Simple text file storage (`loginData.txt`)  
+- 🧩 Easy to understand and extend :contentReference[oaicite:2]{index=2}
 
-Easy to modify and understand
+## 🛠️ How It Works
 
-How Data Is Stored
+- User entries are appended to `loginData.txt`  
+- Login checks username and password from the file  
+- Forgot password retrieves the stored password if matched :contentReference[oaicite:3]{index=3}
 
-Each record is saved in this format:
+⚠ **Note:** Passwords are stored in plain text — this is **not secure for real applications**. Use hashing in production. :contentReference[oaicite:4]{index=4}
 
-username*email*password
+## 💻 How to Compile
 
+Use any standard C++ compiler:
 
-The asterisk separates each field for easy reading and searching.
-
-How It Works
-
-Sign Up
-
-User enters username, email, and password
-
-Details are saved inside loginData.txt
-
-Login
-
-Program reads each record from the file
-
-It checks if the username and password match any saved record
-
-Displays a success message if both match
-
-Forgot Password
-
-User enters username and email
-
-Program searches records
-
-If a match is found, the saved password is shown
-
-How to Compile
-
-Use any C++ compiler:
-
-g++ main.cpp -o auth
-
-How to Run
-./auth
-
-File Structure
-/project-folder
-   main.cpp
-   loginData.txt
-   README.md
-
-Notes
-
-Passwords are stored in plain text. This is not secure for real applications.
-
-Only for practice and demonstration.
-
-Improve by adding encryption or hashing for passwords if needed.
+```bash
+g++ login.cpp -o login-app
